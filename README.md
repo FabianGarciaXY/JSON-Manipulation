@@ -37,7 +37,7 @@ Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *r
 ```
 ... 
 Obteniendo:
-<kbd>![](./images/jsonData.png)<kbd>
+<kbd>![](./images/json.png)<kbd>
 
 ...
 
