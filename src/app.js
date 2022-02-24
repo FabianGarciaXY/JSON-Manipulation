@@ -3,7 +3,7 @@
 // Autor: FabianXy
 // Fecha: 22 - 02 - 22
 
-const jsonData = require('./users.json');
+const jsonData = require('../users.json');
 
 // Obtención de los No. Telefonicos iterando sobre objeto users:
 const getPhones = (json) => {
