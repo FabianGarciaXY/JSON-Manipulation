@@ -29,7 +29,7 @@ Es parecido a un objeto literal de JS, pero todas sus claves deben llevar comill
 
 
 ## Practice
-Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *require* para accedera el:
+* Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *require* para accedera el:
 
 *app.js*
 ```
@@ -61,6 +61,15 @@ console.log(getPhones(jsonData));
 Siendo el output:
 ![](./images/output.png)
 
-...
+...<br>
+* En un uso mas avanzado podemos obsevar el JSON youtube-search.json en donde vemos los datos que se obtienen en un JSON tras una busqueda en youtube.<br>
+![](./images/2.png)
+El cual contiene objetos anidados en otros objetos y arrays.
+Para procesarolo si por ejemplo queremos obtener los resultados y de estos solo los ID's de los videos, entonces:
+```
+    const jsonSearch = require('./youtube-search.json')
 
+    
+
+```
 ---
