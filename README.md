@@ -4,8 +4,8 @@
 ## INDICE
 ---
 * [JSON](#introduction)
-* [ESTRUCTURA](#estrucura)
-* [PRACTICA](#practica)
+* [Estructura](#estrucura)
+* [Practica](#practica)
 
 ## ¿Que es JSON? <a name='introduction'></a>
 JavaScript Object Notation. Un formato de intercambio de información entre aplicaciones.
@@ -72,18 +72,16 @@ Siendo el output:
 ---
 <br>
 
-En otro ejemplo podemos usar el JSON XNzXri4.json en donde vemos los datos que se obtienen en un JSON tras una busqueda en youtube.<br>
-![](./images/2.png)
-El cual contiene objetos anidados en otros objetos y arrays.
-Para procesarolo si por ejemplo queremos obtener los resultados y de estos solo los ID's de los videos, entonces:
+En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene objetos anidados en otros objetos y arrays.<br>
+
+
 
 
 ```
     const newJson = require('../XNzXr1i4.json');
+    console.log(newJson);
 ```
 <br>
-    output:
-<br><br>
 
 ```
 [
@@ -110,6 +108,7 @@ Para procesarolo si por ejemplo queremos obtener los resultados y de estos solo 
     ...
     ]
 ```
+
 
 Para obtener por ejemplo todos los estados de los **'primary guest details'**:
 
