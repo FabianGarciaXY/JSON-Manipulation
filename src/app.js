@@ -10,8 +10,9 @@ const getPhones = (json) => {
     }
     return
 }
-console.log(getPhones(jsonData));
 
 // Extracción de datos XNzXr1i4.json
 const newJson = require('../XNzXr1i4.json')
-console.log(newJson);
+
+const states = newJson[2].primary_guest_details.state
+console.log(states)
