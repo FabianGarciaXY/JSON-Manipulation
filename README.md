@@ -144,8 +144,39 @@ Para obtener por ejemplo todos los estados de los **'primary guest details'**:
         "Indiana",
         "Iowa",
         ...
-        "Virgin Islands"
     ]
 ```
 ...
 ---
+Para extrar los destinos:
+* Accemos al primer indice del array
+* Seleccionamos el objeto anidado **destination**   
+```
+    const destinations = newJson[1].destination;
+    console.log(destinations)
+```
+Output:
+```
+// Se obtiene un array con los datos
+[
+  'Mediterranean',     
+  'Bahamas',           
+  'Mexico',            
+  'North America',     
+  'Pacific',           
+  'Asia Indian Ocean', 
+  'Australasia',       
+  'Transatlantic',     
+  'Sout America',      
+  'Iberia Peninsula',  
+  'Middle East',       
+  'Polar Regions',     
+  'Russia',            
+  'Africa',            
+  'Black Sea',         
+  'Fiji',              
+  'Oceania',
+  ...
+]
+```
+

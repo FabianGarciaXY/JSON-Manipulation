@@ -15,4 +15,6 @@ const getPhones = (json) => {
 const newJson = require('../XNzXr1i4.json')
 
 const states = newJson[2].primary_guest_details.state
-console.log(states)
+
+const destinations = newJson[0].destination;
+console.log(destinations);
