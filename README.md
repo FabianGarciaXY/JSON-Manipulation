@@ -174,4 +174,27 @@ Para extrar los **destinos**:
 ]
 ```
 ---
-*Para obtener obtener un los nombres de los cruceros:* 
+*Para obtener obtener un los nombres de los cruceros:* :
+* Accedemos al index 0
+* Accedemos al objeto cruise_ship
+
+```JS
+    const cruises = newJson[0].cruise_ship;
+    console.log(cruises);
+```
+**output**:
+```JS
+[
+    'Carnival Cruise Line',
+    'Royal Caribbean International',
+    'MSC Cruises',
+    'Norwegian Cruise Line',
+    'Princess Cruises',
+    'Costa Cruises',
+    'Celebrity Cruises',
+    'Azamara',
+    'Oceania Cruises'
+]
+```
+---
+:)

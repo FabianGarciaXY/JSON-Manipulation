@@ -18,3 +18,6 @@ const states = newJson[2].primary_guest_details.state
 
 const destinations = newJson[0].destination;
 console.log(destinations);
+
+const cruises = newJson[0].cruise_ship;
+console.log(cruises);
