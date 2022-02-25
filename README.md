@@ -76,7 +76,77 @@ En otro ejemplo podemos usar el JSON XNzXri4.json en donde vemos los datos que s
 ![](./images/2.png)
 El cual contiene objetos anidados en otros objetos y arrays.
 Para procesarolo si por ejemplo queremos obtener los resultados y de estos solo los ID's de los videos, entonces:
+
+
 ```
-    const newJson = require('../XNzXr1i4.json')
+    const newJson = require('../XNzXr1i4.json');
 ```
+<br>
+    output:
+<br><br>
+
+```
+[
+  {
+    "destination":[
+    "Mediterranean",
+    "Carrebean",
+    "Bahamas",
+    "Europe",
+    "Mexico",
+    "Alaska",
+    "North America",
+    "Scandenavia",
+    "Pacific",
+    "Baltic",
+    "Asia Indian Ocean",
+    "Hawaii",
+    "Australasia",
+    "Bermuda",
+    "Transatlantic",
+    "United Kingdom",
+    "Sout America",
+    "Canaries",
+    ...
+    ]
+```
+
+Para obtener por ejemplo todos los estados de los **'primary guest details'**:
+
+* Primero accedemos al indice del array.
+* Accedemos a los objetos anidados por *'dot notation'* 
+  
+<br>
+
+```
+// Extracción de datos XNzXr1i4.json
+    const newJson = require('../XNzXr1i4.json');
+
+    const states = newJson[2].primary_guest_details.state;
+    console.log(states);
+```
+**output:**
+```
+    [
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Conneticut",
+        "Delaware",
+        "District of Columbia",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        ...
+        "Virgin Islands"
+    ]
+```
+...
 ---
