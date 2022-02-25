@@ -14,7 +14,8 @@ Esto nos permite serializar objetos, arreglos, números, cadenas, booleanos y nu
 
 ## Estructura de JSON <a name='estructura'></a>
 Es parecido a un objeto literal de JS, pero todas sus claves deben llevar comillas dobles "", (tambien es recomendable ponerlos en los valores):
-```
+<br>
+```JSON
     {
         "userId": 1,
         "firstName": "Krish",
@@ -38,17 +39,18 @@ Es parecido a un objeto literal de JS, pero todas sus claves deben llevar comill
 * Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *require* para accedera el:
 
 *app.js*
-```
+```JS
     const json = require('./users.json')
 ```
 ... 
-Obteniendo:
+Obteniendo:<br>
 <kbd>![](./images/json.png)<kbd>
 
 ...
 
 Contando ya con los datos, podemos realizar distintas operaciones, segun nuestro intereses, por ejemplo si queremos obtener los número telefonicos de los usuarios podemos acceder a ellos como sigue:
-```
+<br>
+```JS
 const jsonData = require('./users.json');
 
 // Obtención de los No. Telefonicos iterando sobre objeto users:
@@ -74,16 +76,13 @@ Siendo el output:
 
 En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene objetos anidados en otros objetos y arrays.<br>
 
-
-
-
-```
+```JS
     const newJson = require('../XNzXr1i4.json');
     console.log(newJson);
 ```
 <br>
 
-```
+```JSON
 [
   {
     "destination":[
@@ -108,8 +107,6 @@ En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene
     ...
     ]
 ```
-
-
 Para obtener por ejemplo todos los estados de los **'primary guest details'**:
 
 * Primero accedemos al indice del array.
@@ -117,7 +114,7 @@ Para obtener por ejemplo todos los estados de los **'primary guest details'**:
   
 <br>
 
-```
+```JS
 // Extracción de datos XNzXr1i4.json
     const newJson = require('../XNzXr1i4.json');
 
@@ -125,7 +122,7 @@ Para obtener por ejemplo todos los estados de los **'primary guest details'**:
     console.log(states);
 ```
 **output:**
-```
+```JSON
     [
         "Alabama",
         "Alaska",
@@ -148,15 +145,15 @@ Para obtener por ejemplo todos los estados de los **'primary guest details'**:
 ```
 ...
 ---
-Para extrar los destinos:
+Para extrar los **destinos**:
 * Accemos al primer indice del array
 * Seleccionamos el objeto anidado **destination**   
-```
+```JS
     const destinations = newJson[1].destination;
     console.log(destinations)
 ```
-Output:
-```
+**Output**:
+```JS
 // Se obtiene un array con los datos
 [
   'Mediterranean',     
