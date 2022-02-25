@@ -36,8 +36,7 @@ Es parecido a un objeto literal de JS, pero todas sus claves deben llevar comill
 
 
 ## Practice <a name='practica'> </a> 
-* Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *require* para accedera el:
-
+*Para ejemplo cuando ya contamos con un archivo JSON, podemos usar la función *require* para accedera el:*
 *app.js*
 ```JS
     const json = require('./users.json')
@@ -48,7 +47,7 @@ Obteniendo:<br>
 
 ...
 
-Contando ya con los datos, podemos realizar distintas operaciones, segun nuestro intereses, por ejemplo si queremos obtener los número telefonicos de los usuarios podemos acceder a ellos como sigue:
+*Contando ya con los datos, podemos realizar distintas operaciones, segun nuestro intereses, por ejemplo si queremos obtener los número telefonicos de los usuarios podemos acceder a ellos como sigue:*
 <br>
 ```JS
 const jsonData = require('./users.json');
@@ -74,8 +73,7 @@ Siendo el output:
 ---
 <br>
 
-En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene objetos anidados en otros objetos y arrays.<br>
-
+*En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene objetos anidados en otros objetos y arrays.<br>*
 ```JS
     const newJson = require('../XNzXr1i4.json');
     console.log(newJson);
@@ -107,8 +105,7 @@ En otro ejemplo podemos usar el JSON XNzXri4.json que contiene, el cual contiene
     ...
     ]
 ```
-Para obtener por ejemplo todos los estados de los **'primary guest details'**:
-
+*Para obtener por ejemplo todos los estados de los **'primary guest details'**:*
 * Primero accedemos al indice del array.
 * Accedemos a los objetos anidados por *'dot notation'* 
   
@@ -176,4 +173,5 @@ Para extrar los **destinos**:
   ...
 ]
 ```
-
+---
+*Para obtener obtener un los nombres de los cruceros:* 
